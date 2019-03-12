@@ -212,9 +212,9 @@ download \
   "https://github.com/xiph/speex/archive/"
 
 download \
-  "n3.4.2.tar.gz" \
-  "ffmpeg3.4.2.tar.gz" \
-  "935a1c02531f6e2b8c97d35cef4e4538" \
+  "n4.1.tar.gz" \
+  "ffmpeg4.1.tar.gz" \
+  "53dfa0319f60e0da8835906063311f56" \
   "https://github.com/FFmpeg/FFmpeg/archive"
 
 [ $download_only -eq 1 ] && exit 0
@@ -334,7 +334,6 @@ echo "*** Building librtmp ***"
 cd $BUILD_DIR/rtmpdump-*
 cd librtmp
 [ $rebuild -eq 1 ] && make distclean || true
-
 # there's no configure, we have to edit Makefile directly
 if [ "$platform" = "linux" ]; then
   sed -i "/INC=.*/d" ./Makefile # Remove INC if present from previous run.
