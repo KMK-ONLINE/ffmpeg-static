@@ -440,7 +440,6 @@ if [ "$platform" = "linux" ]; then
     --enable-libopencore-amrwb \
     --enable-libopenjpeg \
     --enable-libopus \
-    --enable-librtmp \
     --enable-libsoxr \
     --enable-libspeex \
     --enable-libtheora \
@@ -480,7 +479,6 @@ elif [ "$platform" = "darwin" ]; then
     --enable-libopencore-amrwb \
     --enable-libopenjpeg \
     --enable-libopus \
-    --enable-librtmp \
     --enable-libsoxr \
     --enable-libspeex \
     --enable-libvidstab \
